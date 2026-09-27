@@ -1,7 +1,7 @@
 import telebot
 
-# توكن البوت الخاص بك
-BOT_TOKEN = "8943659346:AAGy7cO1kn6iqVmmG9m5rGi9oL5Hr_VF5l8"
+# التوكن الجديد والمحدث
+BOT_TOKEN = "8943659346:AAGVmcKsXHO6ACWIl6TPs-ZbMCiwVpS23Nk"
 
 # تهيئة البوت
 bot = telebot.TeleBot(BOT_TOKEN)
@@ -9,7 +9,7 @@ bot = telebot.TeleBot(BOT_TOKEN)
 # الأمر /start
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
-    welcome_text = "أهلاً بك! 👋\nالبوت يعمل الآن بنجاح."
+    welcome_text = "أهلاً بك! 👋\nالبوت يعمل الآن بنجاح وبدون أي تضارب."
     bot.reply_to(message, welcome_text)
 
 # استقبال جميع الرسائل والرد عليها
@@ -20,4 +20,3 @@ def handle_message(message):
 # تشغيل البوت باستمرار
 if __name__ == "__main__":
     bot.infinity_polling()
-  
